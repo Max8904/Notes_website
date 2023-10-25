@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {
     useParams,
     Link
@@ -9,7 +9,8 @@ import { ReactComponent as ArrowLeft } from '../assets/arrow-left.svg'
 const NotePage = (props) => {
     let noteId = useParams().id
 
-    let note = notes.find(note => note.id === Number(noteId))
+    // let note = notes.find(note => note.id === Number(noteId))
+    let [note, setNote] = useState(null)
 
     return (
     <div className='note'>

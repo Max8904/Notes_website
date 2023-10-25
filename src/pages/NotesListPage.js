@@ -1,8 +1,11 @@
-import React from 'react'
-import notes from '../assets/data'
+import React, {useState} from 'react'
+// import notes from '../assets/data'
 import ListItem from '../components/ListItem'
 
 const NotesListPage = () => {
+
+  let [notes, setNotes] = useState([])
+
   return (
     <div className='notes'>
       <div className='notes-header'>
