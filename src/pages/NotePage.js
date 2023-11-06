@@ -4,7 +4,6 @@ import {
     Link,
     useNavigate
 } from 'react-router-dom'
-import notes from '../assets/data'
 import { ReactComponent as ArrowLeft } from '../assets/arrow-left.svg'
 
 const NotePage = (props) => {
